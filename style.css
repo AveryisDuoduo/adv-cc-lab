@@ -1,8 +1,22 @@
-body{
+body {
+    background-color: lightsalmon;
+    font-family: 'sans-serif', Arial;
+}
 
-    background-color: pink;
-   }
-  #my-first-id  {
-    background-color: white;
-   }
- 
+#my-first-id {
+    background-color: lightsalmon;
+    color: white; 
+    font-family: 'sans-serif', Arial;
+}
+
+#my-second-id {
+    background-color: lightsalmon;
+    color: lightblue; 
+    font-family: 'sans-serif', Arial;
+}
+
+#my-third-id {
+    background-color: lightsalmon;
+    color: rgb(5, 5, 186); 
+    font-family: 'sans-serif', Arial;
+}
