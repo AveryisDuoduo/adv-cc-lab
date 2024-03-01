@@ -1,0 +1,75 @@
+div {
+
+background-color: aquamarine;
+/* width: 300px;  */
+
+border: 15px solid pink;
+padding: 50px;
+margin: 20px;
+}
+
+.outer-container{
+display: grid;
+height: 100vh;
+width: 100vw;
+/* flex-flow: column; */
+/* repeat(how many times to repeat, what you want to repeat)*/
+grid-template-rows: repeat(4, 25vh);
+grid-template-columns: repeat(4, 25vw);
+}
+
+/* .inner-container{
+    display: flex;
+    height: 100vh;
+    flex-flow: column;
+    flex-grow: 1;
+    } */
+
+.header{
+    /* height: 25vh; */
+    border: 1px solid pink;
+    font-size: 2em;
+    /* grid-area: row-start, column-start, row-end, column-end; */
+    grid-area: 1 / 1 / 2 / 5; 
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.footer{
+    grid-area: 4 / 1 / 5 / 5; 
+    /* height: 25vh;
+    border: 1px solid pink;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.image-1 {
+    grid-area: 2 / 1 / 4 / 2; 
+    /* height: 25vh; */
+    background-image: url('images/city.jpg');
+    border: 1px solid pink;
+}
+
+.image-2 {
+    grid-area: 2 / 2 / 4 / 3; 
+    /*\ height: 25vh;*/
+    background-image: url('images/flowers.jpg');
+    border: 1px solid pink; 
+
+}
+.image-3 {
+    grid-area: 2 / 3 / 4 / 4; 
+    /* height: 25vh; */
+    background-image: url('images/forest.jpg');
+    border: 1px solid pink; 
+
+}
+.image-4 {
+    grid-area: 2 / 4 / 4 / 5; 
+    /* height: 25vh; */
+    background-image: url('images/grassland.jpg');
+    border: 1px solid pink; 
+}

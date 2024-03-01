@@ -1,0 +1,20 @@
+body{
+  background-color: lightblue;  
+  color: palevioletred;
+}
+/* on sceens that are 992px less or more, the background color will be pink */
+@media screen and (max-width:992px){
+    body{
+        background-color: pink;
+        color: blueviolet;
+    }
+}
+
+
+/* on sceens that are 600px less or more, the background color will be pink */
+@media screen and (max-width:600px){
+    body{
+        background-color: lightseagreen;
+        color: whitesmoke;
+    }
+}
