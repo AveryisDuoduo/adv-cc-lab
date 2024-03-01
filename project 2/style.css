@@ -14,6 +14,15 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  top: -10%; 
+  left: 40%;
+  position: relative; 
+}
 
 .intro-text {
   color: darkblue;
@@ -31,12 +40,21 @@ body {
 
 .container {
   border: 1px solid pink;
-  display: grid;
   width: 100vw;
-  height: 50vh; 
+  height: 60vh; 
+  margin: 0 auto; 
+  margin-left: 500px; 
   transform: scale(0.8); 
+  display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.hi-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  height: 100vh;
 }
 
 .item {
@@ -149,7 +167,6 @@ body {
   align-items: center;
   height: 100vh; 
   position: relative; 
-
 }
 
 .hi1-text {
@@ -314,34 +331,24 @@ body {
   font-family: "Comfortaa", sans-serif;
 }
 
-.hi2-item-1 {
+.Heart-box {
   background-image: url('heart.png'); 
   background-size: contain; 
   background-position: center; 
+  width: 100%;
+  height: 100%;
+}
+
+.hi2-item-1 {
   grid-area: 1 / 1 / 2 / 2; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .hi2-item-2 {
-  background-image: url('heart.png'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 1 / 2 / 2 / 3; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .hi2-item-3 {
-  background-image: url('heart.png'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 1 / 3 / 2 / 4; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 .hi2-item-4 {
   background-image: url('emos.jpg'); 
@@ -353,33 +360,25 @@ body {
     align-items:center;
 }
 
-.hi2-item-5 {
+.emo-box{
   background-image: url('emo.png'); 
   background-size: contain; 
   background-position: center; 
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.hi2-item-5 {
   grid-area: 2 / 2 / 3 / 3; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .hi2-item-6 {
-  background-image: url('emo.png'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 2 / 3 / 3 / 4; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 .hi2-item-7 {
-  background-image: url('emo.png'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 3 / 1 / 4 / 2; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .hi2-item-8 {
@@ -403,26 +402,6 @@ body {
 }
 
 /* next page */
-.hi3-item {
-  border: 2px dotted yellow;
-  font-size: 20px;
-  font-family: Helvetica;
-}
-.hi3-container {
-  border: 1px solid pink;
-  display: grid;
-  width: 100vw;
-  height: 50vh; 
-  transform: scale(0.6); 
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.item {
-  border: 2px dotted lightcoral;
-  font-size: 20px;
-  font-family: Helvetica;
-}
 
 .hi3-text {
   color: palevioletred;
@@ -446,93 +425,151 @@ body {
   font-family: "Comfortaa", sans-serif;
 }
 
-.hi3-item-1 {
+.Heart-box {
   background-image: url('heart.png'); 
   background-size: contain; 
   background-position: center; 
-  grid-area: 1 / 1 / 2 / 2; 
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
+}
+
+.hi3-item-1 {
+  grid-area: 1 / 1 / 2 / 2; 
 }
 
 .hi3-item-2 {
-  background-image: url('heart.png'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 1 / 2 / 2 / 3; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .hi3-item-3 {
-  background-image: url('heart.png'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 1 / 3 / 2 / 4; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
-.hi3-item-4 {
+
+.emo-box{
   background-image: url('emo.png'); 
   background-size: contain; 
   background-position: center; 
-    grid-area: 2 / 1 / 3 / 2;
+
     display: flex;
     justify-content: center;
     align-items:center;
+}
+.hi3-item-4 {
+    grid-area: 2 / 1 / 3 / 2;
 }
 
 .hi3-item-5 {
-  background-image: url('emo.png'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 2 / 2 / 3 / 3; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .hi3-item-6 {
-  background-image: url('emo.png'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 2 / 3 / 3 / 4; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
-.hi3-item-7 {
+
+.emos-box{
   background-image: url('emos.jpg'); 
   background-size: cover; 
   background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.hi3-item-7 {
   grid-area: 3 / 1 / 4 / 2; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .hi3-item-8 {
-  background-image: url('emos.jpg'); 
-  background-size: cover; 
-  background-position: center; 
     grid-area: 3 / 2 / 4 / 3;
-    display: flex;
-    justify-content: center;
-    align-items:center;
 }
 
 .hi3-item-9 {
+    grid-area: 3 / 3 / 4 / 4;
+} */
+
+.hi3-text {
+  color: palevioletred;
+  font-size: 24px;
+  font-family: "Comfortaa", sans-serif;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hi3no2-text {
+  color: darkblue;
+  font-size: 24px;
+  font-family: "Comfortaa", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.comfortaa {
+  font-family: "Comfortaa", sans-serif;
+}
+
+.Heart-box {
+  background-image: url('heart.png'); 
+  background-size: contain; 
+  background-position: center; 
+  width: 100%;
+  height: 100%;
+}
+
+.hi3-item-1 {
+  grid-area: 1 / 1 / 2 / 2; 
+}
+
+.hi3-item-2 {
+  grid-area: 1 / 2 / 2 / 3; 
+}
+
+.hi3-item-3 {
+  grid-area: 1 / 3 / 2 / 4; 
+}
+
+.emo-box {
+  background-image: url('emo.png'); 
+  background-size: contain; 
+  background-position: center; 
+  width: 100%;
+  height: 100%;
+}
+
+.hi3-item-4 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.hi3-item-5 {
+  grid-area: 2 / 2 / 3 / 3; 
+}
+
+.hi3-item-6 {
+  grid-area: 2 / 3 / 3 / 4; 
+}
+
+.emos-box {
   background-image: url('emos.jpg'); 
   background-size: cover; 
   background-position: center; 
-    grid-area: 3 / 3 / 4 / 4;
-    display: flex;
-    justify-content: center;
-    align-items:center;
+  width: 100%;
+  height: 100%;
 }
+
+.hi3-item-7 {
+  grid-area: 3 / 1 / 4 / 2; 
+}
+
+.hi3-item-8 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.hi3-item-9 {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
 
 /* next page */
 .hi4-text {
@@ -544,12 +581,12 @@ body {
   left: 45%;
   transform: translate(-50%, -50%);
 }
-.hi4-container {
+/* .hi4-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr 1fr 1fr; 
   height: 100vh;
-}
+} */
 
 .hi4-item {
   border: 2px dotted yellow;
@@ -741,84 +778,54 @@ body {
   font-family: Helvetica;
 }
 
-.hi4no2-item-1 {
+.ho-box{
   background-image: url('ho.jpeg'); 
   background-size: contain; 
   background-position: center; 
-  grid-area: 1 / 1 / 2 / 2; 
   display: flex;
   justify-content: center;
   align-items:center;
+}
+
+.hi4no2-item-1 {
+  grid-area: 1 / 1 / 2 / 2; 
 }
 
 .hi4no2-item-2 {
-  background-image: url('ho.jpeg'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 1 / 2 / 2 / 3; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .hi4no2-item-3 {
-  background-image: url('ho.jpeg'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 1 / 3 / 2 / 4; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .hi4no2-item-4 {
-  background-image: url('ho.jpeg'); 
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.hi-box{
+  background-image: url('hi.jpeg'); 
   background-size: contain; 
   background-position: center; 
-    grid-area: 1 / 4 / 2 / 5;
-    display: flex;
-    justify-content: center;
-    align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items:center;
 }
 
 .hi4no2-item-5 {
-  background-image: url('hi.jpeg'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 2 / 1 / 3 / 2; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .hi4no2-item-6 {
-  background-image: url('hi.jpeg'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 2 / 2 / 3 / 3; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .hi4no2-item-7 {
-  background-image: url('hi.jpeg'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 2 / 3 / 3 / 4; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .hi4no2-item-8 {
-  background-image: url('hi.jpeg'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 2 / 4 / 3 / 5; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 .hi4no2-item-9 {
   background-image: url('hey.jpeg'); 
@@ -912,173 +919,114 @@ body {
   font-size: 20px;
   font-family: Helvetica;
 }
-.hi4no3-item-1 {
+
+.ho-box{
   background-image: url('ho.jpeg'); 
   background-size: contain; 
   background-position: center; 
-  grid-area: 1 / 1 / 2 / 2; 
   display: flex;
   justify-content: center;
   align-items:center;
+}
+
+.hi4no3-item-1 {
+  grid-area: 1 / 1 / 2 / 2; 
 }
 
 .hi4no3-item-2 {
-  background-image: url('ho.jpeg'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 1 / 2 / 2 / 3; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .hi4no3-item-3 {
-  background-image: url('ho.jpeg'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 1 / 3 / 2 / 4; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .hi4no3-item-4 {
-  background-image: url('ho.jpeg'); 
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.hi-box{
+  background-image: url('hi.jpeg'); 
   background-size: contain; 
   background-position: center; 
-    grid-area: 1 / 4 / 2 / 5;
-    display: flex;
-    justify-content: center;
-    align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items:center;
 }
 
 .hi4no3-item-5 {
-  background-image: url('hi.jpeg'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 2 / 1 / 3 / 2; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .hi4no3-item-6 {
-  background-image: url('hi.jpeg'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 2 / 2 / 3 / 3; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .hi4no3-item-7 {
-  background-image: url('hi.jpeg'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 2 / 3 / 3 / 4; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .hi4no3-item-8 {
-  background-image: url('hi.jpeg'); 
+  grid-area: 2 / 4 / 3 / 5; 
+}
+
+.hey-box{
+  background-image: url('hey.jpeg'); 
   background-size: contain; 
   background-position: center; 
-  grid-area: 2 / 4 / 3 / 5; 
   display: flex;
   justify-content: center;
   align-items:center;
 }
+
 .hi4no3-item-9 {
-  background-image: url('hey.jpeg'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 3 / 1 / 3 / 2; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .hi4no3-item-10 {
-  background-image: url('hey.jpeg'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 3 / 2 / 3 / 3; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .hi4no3-item-11 {
-  background-image: url('hey.jpeg'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 3 / 3 / 3 / 4; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .hi4no3-item-12 {
-  background-image: url('hey.jpeg'); 
+  grid-area: 3 / 4 / 3 / 5; 
+}
+
+.ha-box{
+  background-image: url('ha.jpeg'); 
   background-size: contain; 
   background-position: center; 
-  grid-area: 3 / 4 / 3 / 5; 
   display: flex;
   justify-content: center;
   align-items:center;
 }
 
 .hi4no3-item-13 {
-  background-image: url('ha.jpeg'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 5 / 1 / 4 / 2; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .hi4no3-item-14 {
-  background-image: url('ha.jpeg'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 5 / 2 / 4 / 3; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .hi4no3-item-15 {
-  background-image: url('ha.jpeg'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 5 / 3 / 4 / 4; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .hi4no3-item-16 {
-  background-image: url('ha.jpeg'); 
-  background-size: contain; 
-  background-position: center; 
   grid-area: 5 / 4 / 4 / 5; 
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
-/* next page */
 .hi4no3-text {
   color: darkblue;
   font-size: 24px;
   font-family: "Comfortaa", sans-serif;
   position: absolute;
-  top: 5%; 
-  right: 5%; 
+  top: 100%; 
+  right: 50%; 
 }
 
 body {
@@ -1110,127 +1058,266 @@ body {
   font-family: Helvetica;
 }
 
+.hi5-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 100vh; 
+}
+
+.hi5-item {
+  border: 2px dotted lightcoral;
+  font-size: 20px;
+  font-family: Helvetica;
+}
+
 .hi5-item-1 {
-  background-color: lightblue;
+  background-image: url('bo.jpeg'); 
+  background-size: contain; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
   grid-area: 1 / 1 / 2 / 2; 
 }
 
 .hi5-item-2 {
-  background-color: pink;
+  background-image: url('love.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
   grid-area: 1 / 2 / 2 / 3; 
 }
 
 .hi5-item-3 {
-  background-color: lightgreen;
+  background-image: url('m.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
   grid-area: 1 / 3 / 2 / 4; 
 }
 
 .hi5-item-4 {
-  background-color: lightblue;
+  background-image: url('ep.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
   grid-area: 1 / 4 / 2 / 5; 
 }
 
 .hi5-item-5 {
-  background-color: pink;
-  grid-area: 2 / 1 / 3 / 2; 
-}
-
-.hi5-item-6 {
-  background-color: lightgreen;
-  grid-area: 2 / 2 / 3 / 3;
-}
-
-.hi5-item-7 {
-  background-color: lightblue;
-  grid-area: 2 / 3 / 3 / 4; 
-}
-
-.hi5-item-8 {
-  background-color: pink;
-  grid-area: 2 / 4 / 3 / 5; 
-}
-
-.hi5-item-9 {
-  background-color: lightgreen;
-  grid-area: 3 / 1 / 4 / 2; 
-}
-
-.hi5-item-10 {
-  background-color: lightblue; 
-  grid-area: 3 / 2 / 4 / 3; 
-}
-
-.hi5-item-11 {
-  background-color: pink; 
-  grid-area: 3 / 3 / 4 / 4; 
-}
-
-.hi5-item-12 {
-  background-color: lightgreen; 
-  grid-area: 3 / 4 / 4 / 5; 
-}
-
-.hi5-item-13 {
-  background-color: lightblue; 
-  grid-area: 4 / 1 / 5 / 2; 
-}
-
-.hi5-item-14 {
-  background-color: pink; 
-  grid-area: 4 / 2 / 5 / 3; 
-}
-
-.hi5-item-15 {
-  background-color: lightgreen; 
-  grid-area: 4 / 3 / 5 / 4; 
-}
-
-.hi5-item-16 {
-  background-color: lightblue; 
-  grid-area: 4 / 4 / 5 / 5; 
-}
-
-.hi5-item-17 {
-  background-color: pink; 
-  grid-area: 5 / 1 / 6 / 2; 
-}
-
-.hi5-item-18 {
-  background-color: lightgreen; 
-  grid-area: 5 / 2 / 6 / 3; 
-}
-
-.hi5-item-19 {
-  background-color: lightblue; 
-  grid-area: 5 / 3 / 6 / 4; 
-}
-
-.hi5-item-20 {
-  background-color: pink; 
-  grid-area: 5 / 4 / 6 / 5; 
-}
-
-.hi5-item-21 {
-  background-color: lightgreen; 
+  background-image: url('ai.png'); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
   grid-area: 1 / 5 / 2 / 6; 
 }
 
-.hi5-item-22 {
-  background-color: lightblue; 
+.hi5-item-6 {
+  background-image: url('bo.jpeg'); 
+  background-size: contain; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.hi5-item-7 {
+  background-image: url('love.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  grid-area: 2 / 2 / 3 / 3; 
+}
+
+.hi5-item-8 {
+  background-image: url('m.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  grid-area: 2 / 3 / 3 / 4; 
+}
+
+.hi5-item-9 {
+  background-image: url('ep.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  grid-area: 2 / 4 / 3 / 5; 
+}
+
+.hi5-item-10 {
+  background-image: url('ai.png'); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
   grid-area: 2 / 5 / 3 / 6; 
 }
 
-.hi5-item-23 {
-  background-color: pink; 
+.hi5-item-11 {
+  background-image: url('bo.jpeg'); 
+  background-size: contain; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  grid-area: 3 / 1 / 4 / 2; 
+}
+
+.hi5-item-12 {
+  background-image: url('love.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  grid-area: 3 / 2 / 4 / 3; 
+}
+
+
+.hi5-item-13 {
+  background-image: url('m.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  grid-area: 3 / 3 / 4 / 4; 
+}
+
+.hi5-item-14 {
+  background-image: url('ep.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  grid-area: 3 / 4 / 4 / 5; 
+}
+
+.hi5-item-15 {
+  background-image: url('ai.png'); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
   grid-area: 3 / 5 / 4 / 6; 
 }
 
-.hi5-item-24 {
-  background-color: lightgreen; 
+.hi5-item-16 {
+  background-image: url('bo.jpeg'); 
+  background-size: contain; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  grid-area: 4 / 1 / 5 / 2; 
+}
+
+.hi5-item-17 {
+  background-image: url('love.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  grid-area: 4 / 2 / 5 / 3; 
+}
+
+.hi5-item-18 {
+  background-image: url('m.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  grid-area: 4 / 3 / 5 / 4; 
+}
+
+.hi5-item-19 {
+  background-image: url('ep.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  grid-area: 4 / 4 / 5 / 5; 
+}
+
+.hi5-item-20 {
+  background-image: url('ai.png'); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
   grid-area: 4 / 5 / 5 / 6; 
 }
 
+.hi5-item-21 {
+  background-image: url('bo.jpeg'); 
+  background-size: contain; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  grid-area: 5 / 1 / 6 / 2; 
+}
+
+.hi5-item-22 {
+  background-image: url('love.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  grid-area: 5 / 2 / 6 / 3; 
+}
+
+.hi5-item-23 {
+  background-image: url('m.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  grid-area: 5 / 3 / 6 / 4; 
+}
+
+.hi5-item-24 {
+  background-image: url('ep.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  grid-area: 5 / 4 / 6 / 5; 
+}
+
 .hi5-item-25 {
-  background-color: lightblue; 
+  background-image: url('ai.png'); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
   grid-area: 5 / 5 / 6 / 6; 
 }
